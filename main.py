@@ -1,15 +1,13 @@
-#Ejercicio 1
+#Ejercicio 2
 
-volt_1 = int(input("ingrese el primer voltaje: "))
-volt_2 = int(input("ingrese el segundo voltaje: "))
-volt_3 = int(input("ingrese el tercero voltaje: "))
-volt_4 = int(input("ingrese el cuarto voltaje: "))
-volt_5 = int(input("ingrese el quinto voltaje: "))
+import math
 
-result = (volt_1 + volt_2 + volt_3 + volt_4 + volt_5) / 5
+area = float(input("Ingrese el lado del triangulo: "))
 
-if result > 220:
-    print(f"""{result} es un voltaje alto""")
-    
-elif result < 220:
-    print(f"""{result} es un voltaje correcto""")
+result = math.sqrt((3/4)*(area ** 2))
+
+if result < 1000:
+    print(f"""El area del triangulo es {result}""")
+
+elif result > 1000:
+    print(f"""DATOS NO VALIDOS""")
